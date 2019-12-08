@@ -1,7 +1,5 @@
 require("dotenv").config()
 const admin = require("firebase-admin")
-const serviceAccount = require("./serviceAccountKey.json") // Update this to your file
-
 const servicAcc = {
   type: process.env.FB_TYPE,
   project_id: process.env.FB_PROJECT_ID,
@@ -28,7 +26,7 @@ const db = admin.firestore()
 exports.handler = async (event, context, callback) => {
   // wait for the record to be added
   await db.collection("orders").add({
-    name: "Test from function"
+    name: "fake order"
   })
 
   // Return a callback witha 200 response and a message.
