@@ -1,3 +1,10 @@
-"scripts": {
-  "functions": "cd functions/test && yarn install"
+{
+  "name": "fb-admin-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "functions": "cd functions/test && yarn install"
+  },
+  "author": ""
 }
