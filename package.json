@@ -1,0 +1,3 @@
+"scripts": {
+  "functions": "cd functions/test && yarn install"
+}
