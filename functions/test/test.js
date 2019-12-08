@@ -14,7 +14,7 @@ const db = admin.firestore()
 exports.handler = async (event, context, callback) => {
   // wait for the record to be added
   await db.collection("orders").add({
-    name: "Test"
+    name: "Test from function"
   })
 
   // Return a callback witha 200 response and a message.
