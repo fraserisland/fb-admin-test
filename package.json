@@ -6,5 +6,8 @@
   "scripts": {
     "functions": "cd functions/test && yarn install"
   },
-  "author": ""
+  "author": "",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
