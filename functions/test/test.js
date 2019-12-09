@@ -1,6 +1,6 @@
 require("dotenv").config()
 const admin = require("firebase-admin")
-const servicAcc = {
+const servicAccount = {
   type: process.env.FB_TYPE,
   project_id: process.env.FB_PROJECT_ID,
   private_key_id: process.env.FB_PRIVATE_KEY_ID,
@@ -15,7 +15,7 @@ const servicAcc = {
 
 // Initialise the admin with the credentials
 admin.initializeApp({
-  credential: admin.credential.cert(servicAcc),
+  credential: admin.credential.cert(servicAccount),
   databaseURL: "https://dashboard-test-e60f0.firebaseio.com"
 })
 
