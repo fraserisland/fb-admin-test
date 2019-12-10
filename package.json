@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "functions": "cd functions/test && yarn install"
+    "build-functions": "netlify-lambda build",
+    "install-functions": "netlify-lambda install"
   },
   "author": "",
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "netlify-lambda": "^1.6.3"
   }
 }

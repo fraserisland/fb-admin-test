@@ -1,10 +1,10 @@
 require("dotenv").config()
 
-exports.handler = (event, context, callback) => {
+exports.handler = async (event, context, callback) => {
   return callback(null, {
     statusCode: 200,
     body: JSON.stringify({
-      data: `Test2 called`
+      data: `Test3 called`
     })
   })
 }
