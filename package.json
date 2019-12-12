@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-functions": "netlify-lambda build",
     "install-functions": "netlify-lambda install"
   },
   "author": "",
